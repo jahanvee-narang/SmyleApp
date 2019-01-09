@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/icon_about"
+            android:title="ABOUT CHARITY" />
+        <item
+            android:id="@+id/news"
+            android:icon="@drawable/icon_news"
+            android:title="LATEST NEWS" />
+
+        <item
+            android:id="@+id/sponser"
+            android:icon="@drawable/icon_sponser"
+            android:title="SPONSER THE PROJECT" />
+        <item
+            android:id="@+id/contributions"
+            android:icon="@drawable/icon_donate"
+            android:title="CONTRIBUTIONS" />
+
+        <item
+            android:id="@+id/supporters"
+            android:icon="@drawable/icon_support"
+            android:title="SUPPORTERS" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/icon_share"
+                android:title="TELL YOUR FRIENDS" />
+            <item
+                android:id="@+id/join"
+                android:icon="@drawable/icon_join"
+                android:title="JOIN US" />
+            <item
+                android:id="@+id/write"
+                android:icon="@drawable/icon_write"
+                android:title="WRITE TO US" />
+        </menu>
+    </item>
+
+</menu>

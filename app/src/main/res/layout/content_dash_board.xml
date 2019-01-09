@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DashBoard"
+    tools:showIn="@layout/app_bar_dash_board">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="DASHBOARD"
+        android:fontFamily="sans-serif-condensed"
+        android:textAlignment="center"
+
+        android:textSize="34sp"
+        android:layout_marginBottom="10sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/curve"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="12sp"
+                >
+
+
+                <ImageView
+                    android:id="@+id/about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="12sp"
+                    android:src="@drawable/about" />
+
+                <ImageView
+                    android:id="@+id/donate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="12sp"
+                    android:src="@drawable/donate" />
+
+                <ImageView
+                    android:id="@+id/refer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="12sp"
+                    android:src="@drawable/refer" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10sp"
+                >
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#eb727a"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:text="ABOUT" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#51d517"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:text="DONATE" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#f71a25"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:text="REFER" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/curve"
+                android:layout_marginBottom="10sp"/>
+
+
+            <TextView
+                android:id="@+id/booktrips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Book pilgrimage trips"
+                android:background="@drawable/ovalwhite"/>
+
+            <TextView
+                android:id="@+id/educategirls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:text="Educate 100 girls"
+                android:background="@drawable/ovalwhite"/>
+
+            <TextView
+                android:id="@+id/joinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:text="Join Us"
+                android:background="@drawable/ovalwhite"/>
+            <TextView
+                android:id="@+id/contributions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:text="Contributions"
+                android:background="@drawable/ovalwhite"
+                android:layout_marginBottom="10sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/curve"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SOCIAL MEDIA HANDLES"
+                android:textAlignment="center"
+                android:layout_margin="10sp"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="14sp"
+                >
+
+
+                <TextView
+                    android:id="@+id/read"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:drawableTop="@drawable/facebook"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="LIKE THE PAGE"/>
+
+                <TextView
+                    android:id="@+id/watch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:drawableTop="@drawable/youtube"
+                    android:text="WATCH THE EFFORTS"/>
+
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/sharestories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/oval"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="40sp"
+                android:layout_marginRight="40sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:text="PAY NOW"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
