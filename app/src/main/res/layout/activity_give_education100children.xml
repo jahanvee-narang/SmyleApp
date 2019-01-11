@@ -70,7 +70,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@drawable/oval"
-    android:text="YES, I WANT TO EDUCATION GIRL CHILD"
+    android:text="YES, I WANT TO EDUCATE A GIRL CHILD"
     android:textColor="@color/colorAccent"
     android:layout_gravity="center"
     android:padding="3sp"
@@ -85,7 +85,8 @@
         android:text="or"/>
 
     <Button
-        android:id="@+id/bt_educate_call"
+        android:onClick="dial"
+        android:id="@+id/call"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAlignment="center"
