@@ -1,6 +1,7 @@
 package com.example.jahanveenarang.smyle;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -16,8 +17,12 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.youtube.player.YouTubeIntents;
+
 public class DashBoard extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    String key="UCCjAYRuosoIm6huzZiAcEaQ";
+   // String str="S.E.W.A. and SMYLE foundation Delhi";
 
     ImageView about , donate ,refer ;
     TextView educateGirls, bookTrips , joinUs, contribution , facebook , youtube ;
@@ -94,16 +99,23 @@ public class DashBoard extends AppCompatActivity
         facebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(DashBoard.this , Facebook.class);
-                startActivity(i);
+                Intent intent=new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                Uri uri=Uri.parse("https://www.facebook.com/groups/1059347210847449");
+                intent.setData(uri);
+                startActivity(intent);
             }
         });
 
         youtube.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(DashBoard.this , channel.class);
-                startActivity(i);
+                Intent intent=new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                Uri uri=Uri.parse("https://www.youtube.com/channel/"+key);
+                intent.setData(uri);
+                startActivity(intent);
+
             }
         });
 

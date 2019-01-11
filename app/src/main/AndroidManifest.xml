@@ -18,7 +18,6 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
         </activity>
-        <activity android:name=".Facebook" />
         <activity android:name=".DashBoard" />
         <activity
             android:name=".AboutActivity"
