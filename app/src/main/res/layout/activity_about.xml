@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".AboutActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+    <include
+        android:id="@+id/toolbar_about"
+        layout="@layout/appbar_layout"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:fillViewport="true"
+       >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="8sp">
+            <ImageView
+                android:layout_width="158dp"
+                android:layout_height="131dp"
+                android:src="@drawable/logo"
+                android:layout_weight="1"
+                android:layout_marginLeft="20sp"
+                />
+            <ImageView
+                android:layout_width="148dp"
+                android:layout_height="121dp"
+                android:src="@drawable/icon"
+                android:layout_weight="1"
+                android:layout_marginRight="20sp"
+                />
+        </LinearLayout>
+
+
+            <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Smyle Pariwar Foundation is an NGO based in Delhi which is working towards providing free education to the children who can not afford to pay a fee and they also provide medicines to cancer patients."
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_margin="10sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EDUCATION - We help children with limited means get access to quality education, with a focus on street children and girls"
+        android:textSize="18sp"
+       android:layout_margin="10sp"
+        android:textColor="@color/colorPrimaryDark"
+      />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREATE A CHILD CARING WORLD - Save The Children works to bring lasting changes in the lives of children. We reach out of the most disadvantaged help them survive, thrive ane learn and get a better future."
+        android:textSize="18sp"
+        android:layout_margin="10sp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="GIVE EDUCATION TO 100 CHILDREN - We have made their education our mission. You too can support online to ensure that poverty doesn't stand in the way of a child's education. Support online and take them a step closer to their dreams. No amount is too small. Every penny received can help us change a life!"
+        android:layout_margin="10sp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OUR GOALS: "
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:layout_margin="10sp"
+            android:text="OUR PRIME PURPOSE IN THIS LIFE IS TO HELP PEOPLE. AND IF YOU CAN'T HELP THEM AT LEAST DON'T HURT THEM."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:layout_margin="10sp"
+            android:text="->  Helping the needy children in education"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:layout_margin="10sp"
+            android:text="->  Organizing the Annual Medical Camp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:layout_margin="10sp"
+            android:text="->  Water service for passers-by"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:layout_margin="10sp"
+            android:text="->  Organizing Shyam Baba's Vigilance on Ekadashi"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:layout_margin="10sp"
+            android:text="->  Annual Shyam Mahotsav"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:layout_margin="10sp"
+        android:text="->  Monthly Khatu Shyam ji Bus Tour"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>
