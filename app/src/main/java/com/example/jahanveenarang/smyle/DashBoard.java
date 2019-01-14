@@ -18,6 +18,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import com.google.android.youtube.player.YouTubeIntents;
 
 public class DashBoard extends AppCompatActivity
@@ -158,9 +159,11 @@ public class DashBoard extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+
         if (id == R.id.sign_in) {
             Toast.makeText(this, "Sign in Selected", Toast.LENGTH_LONG).show();
             startActivity(new Intent(DashBoard.this, LoginActivity.class));
+
             return true;
         }
 
@@ -178,6 +181,7 @@ public class DashBoard extends AppCompatActivity
             Intent i = new Intent(DashBoard.this , AboutActivity.class);
             startActivity(i);
         } else if (id == R.id.news) {
+
 
         }else if (id == R.id.gallery) {
             Intent i = new Intent(DashBoard.this , Gallery.class);

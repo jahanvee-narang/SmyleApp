@@ -19,6 +19,7 @@
             android:title="GALLERY" />
 
         <item
+
             android:id="@+id/sponser"
             android:icon="@drawable/icon_sponser"
             android:title="SPONSER THE PROJECT" />

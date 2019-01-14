@@ -12,6 +12,7 @@
         android:smallScreens="true"
         android:xlargeScreens="true" />
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,12 +21,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+</activity>
         <activity android:name=".DashBoard" />
         <activity
             android:name=".AboutActivity"
@@ -38,12 +40,13 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".ResetPasswordActivity" />
         <activity android:name=".SignupActivity" />
-        <activity android:name=".GiveEducation100children">
+        <activity android:name=".GiveEducation100children"/>
 
-        </activity>
         <activity android:name=".Gallery">
 
         </activity>
     </application>
 
 </manifest>
+
+
