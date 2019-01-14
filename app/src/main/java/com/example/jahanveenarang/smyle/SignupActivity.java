@@ -111,7 +111,7 @@ public class SignupActivity extends AppCompatActivity {
                                 } else {
                                     Toast.makeText(SignupActivity.this, "Thank You for Registration" + task.isSuccessful(), Toast.LENGTH_SHORT).show();
 
-                                    startActivity(new Intent(SignupActivity.this, MainActivity.class));
+                                    startActivity(new Intent(SignupActivity.this, SignOut.class));
                                     finish();
                                 }
                             }
