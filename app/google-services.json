@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "1091400998361",
+    "firebase_url": "https://smyleapp-4f715.firebaseio.com",
+    "project_id": "smyleapp-4f715",
+    "storage_bucket": "smyleapp-4f715.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091400998361:android:6d6a85199d22b94a",
+        "android_client_info": {
+          "package_name": "com.example.jahanveenarang.smyle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091400998361-gu9a428kdb8i7j5ce2381trdq477vhed.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jahanveenarang.smyle",
+            "certificate_hash": "b42764e1be0ca0b162d390d2f226938fbb8d1cf5"
+          }
+        },
+        {
+          "client_id": "1091400998361-jpndk13mu22rstn3q3lsvq9mdlc8fs3b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jahanveenarang.smyle",
+            "certificate_hash": "b179e88f4eefe4ade658251587e369ce186b1398"
+          }
+        },
+        {
+          "client_id": "1091400998361-m3qvlgamhn28gjh2mavff2rjrgsdjqdj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo9MOMNGe97fdurBl93kmPd48zzh0U0oo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091400998361-m3qvlgamhn28gjh2mavff2rjrgsdjqdj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -14,10 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="DASHBOARD"
+        android:text="@string/dashboard"
         android:fontFamily="sans-serif-condensed"
         android:textAlignment="center"
-
         android:textSize="34sp"
         android:layout_marginBottom="10sp"/>
 
@@ -28,7 +27,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <LinearLayout
@@ -41,8 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_margin="12sp"
-                >
+                android:layout_margin="12sp">
 
 
                 <ImageView
@@ -75,8 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_margin="10sp"
-                >
+                android:layout_margin="10sp">
 
 
 
@@ -90,8 +87,7 @@
                     android:textAlignment="center"
                     android:layout_marginLeft="10sp"
                     android:layout_marginRight="10sp"
-                    android:text="ABOUT" />
-
+                    android:text="@string/about" />
 
 
                 <TextView
@@ -103,8 +99,7 @@
                     android:textAlignment="center"
                     android:layout_marginLeft="10sp"
                     android:layout_marginRight="10sp"
-                    android:text="DONATE" />
-
+                    android:text="@string/donate" />
 
 
                 <TextView
@@ -117,7 +112,8 @@
                     android:textAlignment="center"
                     android:layout_marginLeft="10sp"
                     android:layout_marginRight="10sp"
-                    android:text="REFER" />
+                    android:text="@string/refer" />
+
 
             </LinearLayout>
 
@@ -136,8 +132,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_gravity="center"
-                android:text="Book pilgrimage trips"
-                android:background="@drawable/ovalwhite"/>
+                android:text="@string/book"/>
 
             <TextView
                 android:id="@+id/educategirls"
@@ -146,8 +141,7 @@
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:layout_margin="10sp"
-                android:text="Educate 100 girls"
-                android:background="@drawable/ovalwhite"/>
+                android:text="@string/educate"/>
 
             <TextView
                 android:id="@+id/joinus"
@@ -156,8 +150,7 @@
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:layout_margin="10sp"
-                android:text="Join Us"
-                android:background="@drawable/ovalwhite"/>
+                android:text="@string/join"/>
             <TextView
                 android:id="@+id/contributions"
                 android:layout_width="wrap_content"
@@ -166,9 +159,8 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="10sp"
                 android:layout_marginRight="10sp"
-                android:text="Contributions"
-                android:background="@drawable/ovalwhite"
-                android:layout_marginBottom="10sp"/>
+                android:text="@string/contributions"/>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -179,18 +171,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SOCIAL MEDIA HANDLES"
-                android:textAlignment="center"
-                android:layout_margin="10sp"
-                android:fontFamily="sans-serif"
-                android:layout_gravity="center"/>
+                android:text="@string/social"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_margin="14sp"
-                >
+                android:layout_margin="14sp">
 
 
                 <TextView
@@ -201,7 +188,7 @@
                     android:textAlignment="center"
                     android:drawableTop="@drawable/facebook"
                     android:fontFamily="sans-serif-smallcaps"
-                    android:text="LIKE THE PAGE"/>
+                    android:text="@string/fb"/>
 
                 <TextView
                     android:id="@+id/watch"
@@ -211,7 +198,7 @@
                     android:textAlignment="center"
                     android:fontFamily="sans-serif-smallcaps"
                     android:drawableTop="@drawable/youtube"
-                    android:text="WATCH THE EFFORTS"/>
+                    android:text="@string/youtube"/>
 
 
             </LinearLayout>
@@ -225,7 +212,7 @@
                 android:layout_marginRight="40sp"
                 android:layout_marginTop="10sp"
                 android:layout_marginBottom="10sp"
-                android:text="PAY NOW"/>
+                android:text="@string/Pay"/>
 
         </LinearLayout>
     </ScrollView>
