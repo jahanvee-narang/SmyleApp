@@ -47,7 +47,6 @@ public class SignOut extends AppCompatActivity {
 
 
 
-        buy = (Button) findViewById(R.id.buy);
         signOut = (Button) findViewById(R.id.sign_out);
 
 

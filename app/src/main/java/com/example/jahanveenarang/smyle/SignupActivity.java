@@ -22,11 +22,22 @@ public class SignupActivity extends AppCompatActivity {
     private Button btnSignIn, btnSignUp, btnResetPassword;
     private ProgressBar progressBar;
     private FirebaseAuth auth;
-
+    android.support.v7.widget.Toolbar  toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+
+        toolbar= findViewById(R.id.toolbar_signup);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Sign UP");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
 
         auth = FirebaseAuth.getInstance();
@@ -111,7 +122,7 @@ public class SignupActivity extends AppCompatActivity {
                                 } else {
                                     Toast.makeText(SignupActivity.this, "Thank You for Registration" + task.isSuccessful(), Toast.LENGTH_SHORT).show();
 
-                                    startActivity(new Intent(SignupActivity.this, SignOut.class));
+                                    startActivity(new Intent(SignupActivity.this, DashBoard.class));
                                     finish();
                                 }
                             }

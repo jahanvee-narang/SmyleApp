@@ -5,13 +5,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:layout_gravity="center"
     android:background="@android:color/white"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
     tools:context=".LoginActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <include
+            android:id="@+id/toolbar_signup"
+            layout="@layout/appbar_layout"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            />
+
+    </android.support.design.widget.AppBarLayout>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -19,14 +31,15 @@
         android:fillViewport="true">
 
         <LinearLayout
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
 
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="8sp"
                 android:orientation="horizontal">
 
@@ -61,7 +74,11 @@
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
                 android:singleLine="true"
-                android:textColor="@android:color/black" />
+                android:textColor="@android:color/black"
+                android:layout_marginRight="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginLeft="15sp"
+                android:background="@drawable/ovalwhite"/>
 
         </android.support.design.widget.TextInputLayout>
 
@@ -80,7 +97,11 @@
                 android:inputType="textPassword"
                 android:maxLines="1"
                 android:singleLine="true"
-                android:textColor="@android:color/black" />
+                android:textColor="@android:color/black"
+                android:layout_marginRight="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginLeft="15sp"
+                android:background="@drawable/ovalwhite"/>
 
         </android.support.design.widget.TextInputLayout>
 
@@ -98,7 +119,11 @@
                 android:inputType="textPersonName"
                 android:maxLines="1"
                 android:singleLine="true"
-                android:textColor="@android:color/black" />
+                android:textColor="@android:color/black"
+                android:layout_marginRight="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginLeft="15sp"
+                android:background="@drawable/ovalwhite"/>
 
         </android.support.design.widget.TextInputLayout>
 
@@ -116,7 +141,11 @@
                 android:inputType="textPostalAddress"
                 android:maxLines="1"
                 android:singleLine="true"
-                android:textColor="@android:color/black" />
+                android:textColor="@android:color/black"
+                android:layout_marginRight="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginLeft="15sp"
+                android:background="@drawable/ovalwhite"/>
 
         </android.support.design.widget.TextInputLayout>
 
@@ -134,7 +163,11 @@
                 android:inputType="phone"
                 android:maxLines="1"
                 android:singleLine="true"
-                android:textColor="@android:color/black" />
+                android:textColor="@android:color/black"
+                android:layout_marginRight="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginLeft="15sp"
+                android:background="@drawable/ovalwhite"/>
 
         </android.support.design.widget.TextInputLayout>
 

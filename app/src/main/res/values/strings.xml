@@ -7,7 +7,7 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
 
-    <string name="sign_in">SIGN IN</string>
+    <string name="sign_out">SIGN OUT</string>
     <string name="dashboard">DASHBOARD</string>
     <string name="about">ABOUT</string>
     <string name="donate">DONATE</string>
@@ -54,6 +54,8 @@
     <string name="lbl_forgot_password">Forgot password?</string>
     <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
 
+    <string name="facebook_app_id">1285172411623865</string>
+    <string name="fb_login_protocol_scheme">fb1285172411623865</string>
 
     <string name="hint_username">Enter a new username</string>
     <string name="hint_email_reset">Enter your email</string>
