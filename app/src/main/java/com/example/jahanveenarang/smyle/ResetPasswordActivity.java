@@ -20,11 +20,22 @@ public class ResetPasswordActivity extends AppCompatActivity {
     private Button btnReset, btnBack;
     private FirebaseAuth auth;
     private ProgressBar progressBar;
-
+    android.support.v7.widget.Toolbar  toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reset_password);
+
+        toolbar= findViewById(R.id.toolbar_reset);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
 
         inputEmail = (EditText) findViewById(R.id.email);
         btnReset = (Button) findViewById(R.id.btn_reset_password);

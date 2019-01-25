@@ -35,13 +35,13 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="259dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="17sp"
         android:layout_marginBottom="53dp"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="jahanvee.narang@gmail.com" />
+        android:layout_marginTop="17sp"
+        android:text="4smylefoundation@gmail.com"
+        android:textColor="@color/colorPrimaryDark" />
 
 </RelativeLayout>

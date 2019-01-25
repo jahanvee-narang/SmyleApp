@@ -23,15 +23,7 @@
             android:id="@+id/sponser"
             android:icon="@drawable/icon_sponser"
             android:title="SPONSER THE PROJECT" />
-        <item
-            android:id="@+id/contributions"
-            android:icon="@drawable/icon_donate"
-            android:title="CONTRIBUTIONS" />
 
-        <item
-            android:id="@+id/supporters"
-            android:icon="@drawable/icon_support"
-            android:title="SUPPORTERS" />
 
     </group>
 
@@ -49,7 +41,10 @@
                 android:id="@+id/write"
                 android:icon="@drawable/icon_write"
                 android:title="WRITE TO US" />
+
+
         </menu>
     </item>
+
 
 </menu>

@@ -23,7 +23,12 @@ public class JoinUS extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Join Us");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         
         ed_first = findViewById(R.id.firstname);
         ed_second = findViewById(R.id.lastname);
