@@ -56,6 +56,16 @@ public class DashBoard extends AppCompatActivity
            }
        });
 
+        donate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url = "https://www.payumoney.com/paybypayumoney/#/DB085F74BD77B86D098E0C30FEC5AF6F";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+            }
+        });
+
         refer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
