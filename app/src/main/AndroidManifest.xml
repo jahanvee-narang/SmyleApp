@@ -61,7 +61,6 @@
         <activity android:name=".SignupActivity" />
         <activity android:name=".GiveEducation100children" />
         <activity android:name=".Gallery"></activity>
-        <activity android:name=".SignOut"></activity>
         <activity android:name=".PaymentActivity"></activity>
     </application>
 
