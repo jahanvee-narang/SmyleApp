@@ -63,9 +63,7 @@
         <activity android:name=".Gallery">
 
         </activity>
-        <activity android:name=".SignOut">
 
-        </activity>
     </application>
 
 </manifest>
