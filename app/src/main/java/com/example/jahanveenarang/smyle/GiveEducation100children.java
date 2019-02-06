@@ -18,6 +18,7 @@ public class GiveEducation100children extends AppCompatActivity {
 
     Toolbar toolbar;
     Button bt_ed_donate;
+    Button bt_CALL;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,16 @@ public class GiveEducation100children extends AppCompatActivity {
 
 
         bt_ed_donate = findViewById(R.id.bt_educate_donate);
+        bt_CALL = findViewById(R.id.bt_educate_call);
+
+        bt_ed_donate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                        Intent i = new Intent(GiveEducation100children.this , PaymentActivity.class);
+                        startActivity(i);
+            }
+        });
 
 
     }
