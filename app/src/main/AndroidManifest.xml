@@ -55,11 +55,14 @@
             android:parentActivityName=".DashBoard"></activity>
         <activity android:name=".Contributions" />
         <activity android:name=".Supporters" />
+         <activity android:name=".TripBooking"
+            android:parentActivityName=".DashBoard"> </activity>
         <activity android:name=".JoinUS" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".ResetPasswordActivity" />
         <activity android:name=".SignupActivity" />
-        <activity android:name=".GiveEducation100children" />
+        <activity android:name=".GiveEducation100children"
+            android:parentActivityName=".DashBoard"> </activity>
 
         <activity android:name=".Gallery">
 
