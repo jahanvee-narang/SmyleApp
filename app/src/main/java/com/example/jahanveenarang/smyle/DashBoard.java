@@ -3,7 +3,6 @@ package com.example.jahanveenarang.smyle;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -11,54 +10,45 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.firebase.auth.FirebaseAuth;
+import com.google.android.youtube.player.YouTubeIntents;
 
 public class DashBoard extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     String key="UCCjAYRuosoIm6huzZiAcEaQ";
-   // String str="S.E.W.A. and SMYLE foundation Delhi";
-   private FirebaseAuth mAuth;
+    // String str="S.E.W.A. and SMYLE foundation Delhi";
+
     ImageView about , donate ,refer ;
-    TextView educateGirls, bookTrips , joinUs , facebook , youtube ;
+    TextView educateGirls, bookTrips , joinUs, contribution , facebook , youtube ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dash_board);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-       mAuth=FirebaseAuth.getInstance();
-       about = findViewById(R.id.about);
-       donate = findViewById(R.id.donate);
-       refer = findViewById(R.id.refer);
 
-       educateGirls = findViewById(R.id.educategirls);
-       bookTrips= findViewById(R.id.booktrips);
-       joinUs = findViewById(R.id.joinus);
+        about = findViewById(R.id.about);
+        donate = findViewById(R.id.donate);
+        refer = findViewById(R.id.refer);
+
+        educateGirls = findViewById(R.id.educategirls);
+        bookTrips= findViewById(R.id.booktrips);
+        joinUs = findViewById(R.id.joinus);
+        contribution = findViewById(R.id.contributions);
+
+        facebook = findViewById(R.id.read);
+        youtube= findViewById(R.id.watch);
 
 
-       facebook = findViewById(R.id.read);
-       youtube= findViewById(R.id.watch);
-
-
-       about.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               Intent i = new Intent(DashBoard.this , AboutActivity.class);
-               startActivity(i);
-           }
-       });
-
-        donate.setOnClickListener(new View.OnClickListener() {
+        about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String url = "https://www.payumoney.com/paybypayumoney/#/DB085F74BD77B86D098E0C30FEC5AF6F";
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
+                Intent i = new Intent(DashBoard.this , AboutActivity.class);
                 startActivity(i);
             }
         });
@@ -76,6 +66,16 @@ public class DashBoard extends AppCompatActivity
             }
         });
 
+        donate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url = "https://www.payumoney.com/paybypayumoney/#/DB085F74BD77B86D098E0C30FEC5AF6F";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+            }
+        });
+
         educateGirls.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -88,14 +88,22 @@ public class DashBoard extends AppCompatActivity
             @Override
             public void onClick(View view) {
 
-                 Intent i = new Intent(DashBoard.this , TripBooking.class);
+                Intent i = new Intent(DashBoard.this , TripBooking.class);
                 startActivity(i);
+
             }
         });
         joinUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(DashBoard.this , JoinUS.class);
+                startActivity(i);
+            }
+        });
+        contribution.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(DashBoard.this , Gallery.class);
                 startActivity(i);
             }
         });
@@ -146,7 +154,6 @@ public class DashBoard extends AppCompatActivity
         }
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -162,10 +169,11 @@ public class DashBoard extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+        if (id == R.id.sign_in) {
+            Toast.makeText(this, "Sign in Selected", Toast.LENGTH_LONG).show();
+            startActivity(new Intent(DashBoard.this, LoginActivity.class));
 
-        if (id == R.id.sign_out) {
-            mAuth.signOut();
-            startActivity(new Intent(DashBoard.this,LoginActivity.class));
+            return true;
         }
 
         return super.onOptionsItemSelected(item);
@@ -181,15 +189,13 @@ public class DashBoard extends AppCompatActivity
 
             Intent i = new Intent(DashBoard.this , AboutActivity.class);
             startActivity(i);
-        } else if (id == R.id.news) {
-
-
-        }else if (id == R.id.gallery) {
-            Intent i = new Intent(DashBoard.this , Gallery.class);
+        }  else if (id == R.id.sponser) {
+            Intent i = new Intent(DashBoard.this , GiveEducation100children.class);
             startActivity(i);
 
-        } else if (id == R.id.sponser) {
-            Intent i = new Intent(DashBoard.this , GiveEducation100children.class);
+        } else if (id == R.id.contributions) {
+
+            Intent i = new Intent(DashBoard.this , Gallery.class);
             startActivity(i);
 
         }
