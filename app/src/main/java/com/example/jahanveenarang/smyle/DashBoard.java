@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,6 +25,7 @@ public class DashBoard extends AppCompatActivity
     // String str="S.E.W.A. and SMYLE foundation Delhi";
 
     ImageView about , donate ,refer ;
+    Button pay;
     TextView educateGirls, bookTrips , joinUs, contribution , facebook , youtube ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,13 @@ public class DashBoard extends AppCompatActivity
         youtube= findViewById(R.id.watch);
 
 
+        pay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(DashBoard.this , PaymentActivity.class);
+                startActivity(i);
+            }
+        });
         about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
