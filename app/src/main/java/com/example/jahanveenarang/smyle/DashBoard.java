@@ -88,6 +88,8 @@ public class DashBoard extends AppCompatActivity
             @Override
             public void onClick(View view) {
 
+                 Intent i = new Intent(DashBoard.this , TripBooking.class);
+                startActivity(i);
             }
         });
         joinUs.setOnClickListener(new View.OnClickListener() {
